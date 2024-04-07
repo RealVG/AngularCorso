@@ -1,28 +1,23 @@
-import { AfterContentChecked, AfterContentInit, AfterViewChecked, AfterViewInit, Component, DoCheck, OnDestroy, OnInit } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-import {MatDividerModule} from '@angular/material/divider';
-import {MatButtonModule} from '@angular/material/button';
+import {
+    //AfterContentChecked,
+    //AfterContentInit,
+    //AfterViewChecked,
+    //AfterViewInit,
+    Component,
+    //DoCheck,
+    //OnDestroy,
+    OnInit,
+} from "@angular/core";
 
 @Component({
-  selector: 'app-prova',
-  standalone: true,
-  imports: [MatButtonModule, MatDividerModule, MatIconModule],
-  templateUrl: './prova.component.html',
-  styleUrl: './prova.component.css'
+    selector: "app-prova",
+    standalone: true,
+    imports: [],
+    templateUrl: "./prova.component.html",
+    styleUrl: "./prova.component.css",
 })
-export class ProvaComponent implements OnInit{
-        isDisabled = false
-    
-    
-    constructor(){
-        console.log("costruttore")  
-    }
-
+export class ProvaComponent implements OnInit {
     ngOnInit(): void {
-        console.log("gnOnInit")  
-        setInterval(()=>{
-            this.isDisabled = !this.isDisabled
-        },2000)
+        throw new Error("Method not implemented.");
     }
-
 }
